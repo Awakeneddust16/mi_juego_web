@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head><title>Combate</title></head>
+<body>
+    <h1>Combate</h1>
+    <p>{{ resultado }}</p>
+    <form action="{{ url_for('combate') }}" method="post">
+        <input type="submit" name="accion" value="atacar">
+        <input type="submit" name="accion" value="defenderse">
+        <input type="submit" name="accion" value="escapar">
+    </form>
+    <a href="{{ url_for('index') }}">Volver</a>
+</body>
+</html>
